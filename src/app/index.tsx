@@ -12,7 +12,7 @@ export default function Index() {
     const userAuth = await AsyncStorage.getItem(USER_AUTH_STORAGE_KEY);
     setTimeout(() => {
       if (userAuth) {
-        router.push("/(tabs)/home");
+        router.push("/home");
       } else {
         router.push("/auth/sign-up");
       }

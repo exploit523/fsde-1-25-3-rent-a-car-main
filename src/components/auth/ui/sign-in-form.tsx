@@ -41,7 +41,7 @@ export default function SignUp() {
             await AsyncStorage.setItem(USER_AUTH_STORAGE_KEY, JSON.stringify(true));
             reset();
             Alert.alert("Success", "Logged in");
-            router.push("/(tabs)/home");
+            router.push("/home");
         } catch (error) {
             console.error("Sign in failed:", error);
             Alert.alert("Error", "Could not log in. Please try again.");
